@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Cafeaz - A botanical-inspired premium bistro & specialty coffee experience. Enjoy artisanal dining, lush aesthetics, and seasonal culinary masterpieces.">
+    <title>Cafeaz | Premium Botanical Bistro & Specialty Coffee</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Transparent Frosted Header -->
+    <header class="navbar-wrapper">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Cafe</span>az
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#menu" class="nav-link">The Menu</a>
+                <a href="#reservation" class="nav-link">Reservations</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#reservation" class="nav-cta-mobile">Reserve a Table</a>
+            </nav>
+
+            <div class="navbar-actions">
+                <a href="#reservation" class="btn btn-primary btn-nav-cta">Reserve a Table</a>
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-background" style="background-image: linear-gradient(180deg, rgba(9, 30, 26, 0.4) 0%, rgba(9, 30, 26, 0.95) 100%), url('assets/hero.png');"></div>
+        <div class="container hero-content">
+            <div class="status-badge-wrapper fade-in">
+                <span class="status-dot"></span>
+                <span class="status-text">Open Daily: 8:00 AM — 11:00 PM</span>
+            </div>
+            <h1 class="hero-title fade-in delay-1">Savor the Art of <br><span class="text-gradient">Gathering</span></h1>
+            <p class="hero-subtitle fade-in delay-2">A sensory sanctuary blending master-roasted specialty coffee, vibrant botanical design, and chef-crafted artisan dining.</p>
+            <div class="hero-ctas fade-in delay-3">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#reservation" class="btn btn-secondary"><i class="fa-regular fa-calendar-days"></i> Book a Table</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-scroll"></span>
+        </div>
+    </section>
+
+    <main>
+        <!-- Story / About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="about-content-block reveal">
+                        <span class="section-tagline">Crafted with Passion</span>
+                        <h2 class="section-title">Where Botanical Luxury <br>Meets Gastronomy</h2>
+                        <p class="section-desc">At Cafeaz, we believe a dining experience should nourish all senses. Our space is custom-designed as an architectural conservatory, inviting you to escape under a lush glass canopy while enjoying outstanding plates.</p>
+                        
+                        <div class="philosophy-tabs">
+                            <div class="tab-triggers">
+                                <button class="tab-trigger active" data-tab="coffee">Our Coffee</button>
+                                <button class="tab-trigger" data-tab="ingredients">Artisan Prep</button>
+                                <button class="tab-trigger" data-tab="ambience">The Space</button>
+                            </div>
+                            <div class="tab-content active" id="tab-coffee">
+                                <p>We source single-origin arabica beans ethically from micro-lots across Colombia and Ethiopia. Each batch is light-medium roasted in-house to preserve delicate floral and fruity notes.</p>
+                            </div>
+                            <div class="tab-content" id="tab-ingredients">
+                                <p>Every pastry is laminated by hand daily using organic grass-fed butter. Our savory menu celebrates organic microgreens, hyper-seasonal heirloom produce, and fresh sustainable seafood.</p>
+                            </div>
+                            <div class="tab-content" id="tab-ambience">
+                                <p>Surrounded by over fifty exotic plant species and bathed in soft ambient sunbeams, our sanctuary is designed for relaxed morning brainstorms, cozy lunches, and unforgettable nights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visuals reveal">
+                        <div class="visuals-wrapper">
+                            <div class="main-visual-card">
+                                <img src="assets/coffee.png" alt="Specialty Pour and Croissant at Cafeaz" class="about-img">
+                                <div class="floating-badge">
+                                    <i class="fa-solid fa-award"></i>
+                                    <span>Award-winning Barista Blend</span>
+                                </div>
+                            </div>
+                            <div class="secondary-visual-card">
+                                <div class="fact-card glassmorphic">
+                                    <span class="fact-number">100%</span>
+                                    <span class="fact-label">Ethically Sourced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+                <div class="section-header reveal text-center">
+                    <span class="section-tagline">Sensory Selections</span>
+                    <h2 class="section-title">The Seasonal Menu</h2>
+                    <p class="section-desc centered">Explore a curated menu combining complex, aromatic flavor profiles, artisanal plating, and handcrafted beverage blends.</p>
+                </div>
+
+                <!-- Menu Filters -->
+                <div class="menu-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All Selections</button>
+                    <button class="filter-btn" data-filter="brews">Specialty Brews</button>
+                    <button class="filter-btn" data-filter="mains">Bistro Mains</button>
+                    <button class="filter-btn" data-filter="pastries">Artisanal Bakery</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid reveal">
+                    <!-- Item 1: Brews -->
+                    <div class="menu-item glassmorphic" data-category="brews">
+                        <div class="menu-item-img-wrapper">
+                            <img src="assets/coffee.png" alt="Rose Lavender Latte" class="menu-item-img">
+                            <span class="menu-item-badge">Signature</span>
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Rose Lavender Honey Latte</h3>
+                                <span class="menu-item-price">$7.50</span>
+                            </div>
+                            <p class="menu-item-desc">Double-shot espresso infused with wild organic lavender syrup, steamed oat milk, local honey drizzle, and food-grade rose petals.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-seedling"></i> Vegan Friendly</span>
+                                <span class="nutrition-hover" title="180 kcal | Gluten Free"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Mains (Salmon - our generated signature image!) -->
+                    <div class="menu-item glassmorphic" data-category="mains">
+                        <div class="menu-item-img-wrapper">
+                            <img src="assets/signature.png" alt="Glazed Botanical Salmon" class="menu-item-img">
+                            <span class="menu-item-badge">Chef's Choice</span>
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Glazed Botanical Salmon</h3>
+                                <span class="menu-item-price">$26.00</span>
+                            </div>
+                            <p class="menu-item-desc">Pan-seared glazed salmon over a rich herb-infused green pea risotto, accompanied by roasted baby heirloom carrots, edible flowers, and fresh microgreens.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-wheat-free"></i> Gluten Free</span>
+                                <span class="nutrition-hover" title="450 kcal | Rich in Omega-3"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Brews -->
+                    <div class="menu-item glassmorphic" data-category="brews">
+                        <div class="menu-item-img-wrapper">
+                            <!-- Let's reuse coffee image -->
+                            <img src="assets/coffee.png" alt="Cafeaz Golden Brew" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Cafeaz Cold Drip Gold</h3>
+                                <span class="menu-item-price">$8.00</span>
+                            </div>
+                            <p class="menu-item-desc">18-hour slow cold drip coffee filtered through active bamboo charcoal, sweetened with artisanal orange blossom sugar, served over crystal clear ice spheres.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-leaf"></i> Organic</span>
+                                <span class="nutrition-hover" title="15 kcal | Zero Sugar"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Pastries (Croissant!) -->
+                    <div class="menu-item glassmorphic" data-category="pastries">
+                        <div class="menu-item-img-wrapper">
+                            <img src="assets/coffee.png" alt="Almond Butter Croissant" class="menu-item-img">
+                            <span class="menu-item-badge">Daily Fresh</span>
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Double Baked Almond Croissant</h3>
+                                <span class="menu-item-price">$6.75</span>
+                            </div>
+                            <p class="menu-item-desc">Handcrafted flaky 72-layer croissant filled with roasted sweet almond frangipane, topped with organic sliced almonds, and dusted with powdered vanilla pod sugar.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-cheese"></i> Contains Nuts</span>
+                                <span class="nutrition-hover" title="320 kcal | Baked Daily"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Mains -->
+                    <div class="menu-item glassmorphic" data-category="mains">
+                        <div class="menu-item-img-wrapper">
+                            <img src="assets/signature.png" alt="Truffle Benedict" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Truffle Wild Mushroom Benedict</h3>
+                                <span class="menu-item-price">$19.50</span>
+                            </div>
+                            <p class="menu-item-desc">Poached organic barnyard eggs on house-made brioche, smothered with shaved Umbrian black truffle hollandaise, sautéed woodside mushrooms, and fresh chives.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-carrot"></i> Vegetarian</span>
+                                <span class="nutrition-hover" title="380 kcal | Chef Recommended"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Pastries -->
+                    <div class="menu-item glassmorphic" data-category="pastries">
+                        <div class="menu-item-img-wrapper">
+                            <img src="assets/coffee.png" alt="Pistachio Rose Cardamom Tart" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Pistachio Rose Cardamom Tart</h3>
+                                <span class="menu-item-price">$9.00</span>
+                            </div>
+                            <p class="menu-item-desc">A crisp shortbread crust filled with rich pistachio paste cream, lightly scented with cardamom pod oils, decorated with candied rose buds and crushed gold leaf.</p>
+                            <div class="menu-item-footer">
+                                <span class="dietary-tag"><i class="fa-solid fa-award"></i> Signature Dessert</span>
+                                <span class="nutrition-hover" title="240 kcal | Premium Ingredients"><i class="fa-solid fa-circle-info"></i> Info</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation-section section-padding" id="reservation">
+            <div class="container">
+                <div class="grid grid-2 align-center">
+                    
+                    <div class="reservation-info reveal">
+                        <span class="section-tagline">Join Us</span>
+                        <h2 class="section-title">Reserve Your Table At The Sanctuary</h2>
+                        <p class="section-desc">Experience intimate evenings, bright weekend brunches, or exclusive gatherings in our custom zones. Select your preferred atmosphere to secure your space.</p>
+                        
+                        <div class="zone-cards">
+                            <div class="zone-card glassmorphic active" data-zone="terrace">
+                                <div class="zone-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                                <div class="zone-details">
+                                    <h4>Garden Terrace</h4>
+                                    <p>Surrounded by blooming flora under soft daytime sunlight. Perfect for refreshing brunches.</p>
+                                </div>
+                            </div>
+                            <div class="zone-card glassmorphic" data-zone="greenhouse">
+                                <div class="zone-icon"><i class="fa-solid fa-gem"></i></div>
+                                <div class="zone-details">
+                                    <h4>Greenhouse Lounge</h4>
+                                    <p>Intimate glass conservatory lighting under active hanging foliage. Ultimate cozy vibe.</p>
+                                </div>
+                            </div>
+                            <div class="zone-card glassmorphic" data-zone="bar">
+                                <div class="zone-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="zone-details">
+                                    <h4>Specialty Coffee & Chef's Bar</h4>
+                                    <p>Observe the baristas and chefs work their magic up close on premium solid oak seating.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation-form-container reveal">
+                        <div class="booking-card glassmorphic" id="bookingCard">
+                            <div class="booking-card-header">
+                                <h3>Online Reservation</h3>
+                                <p>Instant secure confirmation in 60 seconds</p>
+                            </div>
+                            
+                            <form id="reservationForm" class="booking-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="bookingName">Full Name</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-user"></i>
+                                            <input type="text" id="bookingName" placeholder="E.g. Mohammed Mehraj" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bookingEmail">Email Address</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <input type="email" id="bookingEmail" placeholder="name@domain.com" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="bookingDate">Date</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <input type="date" id="bookingDate" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bookingTime">Preferred Time</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <select id="bookingTime" required>
+                                                <option value="" disabled selected>Select slot</option>
+                                                <option value="09:00 AM">09:00 AM (Brunch)</option>
+                                                <option value="11:30 AM">11:30 AM (Lunch)</option>
+                                                <option value="01:30 PM">01:30 PM (Lunch)</option>
+                                                <option value="04:00 PM">04:00 PM (High Tea)</option>
+                                                <option value="06:30 PM">06:30 PM (Dinner)</option>
+                                                <option value="08:30 PM">08:30 PM (Dinner)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="bookingGuests">Party Size</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-users"></i>
+                                            <select id="bookingGuests" required>
+                                                <option value="1">1 Guest</option>
+                                                <option value="2" selected>2 Guests</option>
+                                                <option value="4">4 Guests</option>
+                                                <option value="6">6 Guests</option>
+                                                <option value="8">8+ (Large Party)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bookingZone">Aesthetic Zone</label>
+                                        <div class="input-wrapper">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <select id="bookingZone" required>
+                                                <option value="Garden Terrace" selected>Garden Terrace</option>
+                                                <option value="Greenhouse Lounge">Greenhouse Lounge</option>
+                                                <option value="Specialty Coffee & Chef's Bar">Specialty Coffee & Chef's Bar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bookingNotes">Dietary Notes & Special Requests</label>
+                                    <div class="input-wrapper textarea-wrapper">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                        <textarea id="bookingNotes" rows="2" placeholder="Gluten allergy, celebrating anniversary, etc."></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                    <span id="btnText">Confirm Table Booking</span>
+                                    <i class="fa-solid fa-circle-notch fa-spin hide" id="btnSpinner"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="reviews-section section-padding" id="reviews">
+            <div class="container">
+                <div class="section-header reveal text-center">
+                    <span class="section-tagline">Connoisseur Notes</span>
+                    <h2 class="section-title">What Our Guests Say</h2>
+                    <p class="section-desc centered">Read stories from food aficionados, morning coffee regulars, and evening diners who share their moments at Cafeaz.</p>
+                </div>
+
+                <div class="reviews-carousel reveal">
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            
+                            <!-- Slide 1 -->
+                            <div class="carousel-slide">
+                                <div class="review-card glassmorphic">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"Cafeaz is an absolute aesthetic dream. But unlike most beautiful cafes, their culinary game is incredibly premium! The Glazed Salmon was spectacular, and the lavender latte tastes like a field of flowers in spring."</p>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar">
+                                            <i class="fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="reviewer-name">Audrey Vance</h4>
+                                            <span class="reviewer-title">Gourmet Journalist</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-slide">
+                                <div class="review-card glassmorphic">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"The Greenhouse Lounge is my absolute go-to workspace and weekend sanctuary. The attention to detail—from the bamboo-filtered cold drip to the beautiful 72-layer croissants—is master-class."</p>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="reviewer-name">Liam Fletcher</h4>
+                                            <span class="reviewer-title">Creative Director</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-slide">
+                                <div class="review-card glassmorphic">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="review-text">"My partner and I celebrated our anniversary on the Garden Terrace. The lighting, ambient forest-vibes, and black truffle mushroom benedict made it an unforgettable evening. Dynamic booking ticket was super cool!"</p>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="reviewer-name">Sophia Sterling</h4>
+                                            <span class="reviewer-title">Regular Gastronomist</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator active" data-index="0" aria-label="Slide 1"></button>
+                        <button class="carousel-indicator" data-index="1" aria-label="Slide 2"></button>
+                        <button class="carousel-indicator" data-index="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+        <div class="container footer-content grid grid-4">
+            
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-accent">Cafe</span>az
+                </a>
+                <p class="brand-desc">A botanical-inspired luxury café and bistro experience, nurturing standard culinary artistry and ethical coffee blends.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="social-link" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">The Concept</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#reservation">Table Reservations</a></li>
+                    <li><a href="#reviews">Guest Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Say Hello</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 448 Greenhouse Blvd, <br>Botanical District, NY 10014</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (212) 555-8829</p>
+                <p><i class="fa-solid fa-envelope"></i> curate@cafeaz.com</p>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Connoisseur's Club</h4>
+                <p>Subscribe to receive rare tasting micro-lot invites and seasonal secret menus.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <input type="email" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-newsletter-submit">Join</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Cafeaz. Handcrafted with passion. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
